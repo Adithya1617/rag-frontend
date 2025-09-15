@@ -1,8 +1,8 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App'
-import SimpleApp from './SimpleApp'
 import ErrorBoundary from './ErrorBoundary'
+import SimpleApp from './SimpleApp'
 import './styles.css'
 
 console.log('main.jsx is loading...')
@@ -16,8 +16,8 @@ if (rootElement) {
   const root = createRoot(rootElement)
   console.log('Rendering app...')
   
-  // Temporarily use SimpleApp for testing
-  const USE_SIMPLE_APP = true
+  // Switch back to full app once simple app works
+  const USE_SIMPLE_APP = false
   
   root.render(
     <ErrorBoundary>
