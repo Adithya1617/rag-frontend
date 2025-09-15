@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [react()],
-  base: './', // Use relative paths for assets
+  // Remove base: './' for Vercel deployment
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
