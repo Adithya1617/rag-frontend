@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Deployment</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background: #f0f0f0; 
+        }
+        .test-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Deployment Test Page</h1>
+        <p>If you can see this, your deployment is working!</p>
+        <p>Backend URL: <span id="backend-url"></span></p>
+    </div>
+    
+    <script>
+        console.log('Test page loaded successfully');
+        document.getElementById('backend-url').textContent = 'https://rag-mjbv.onrender.com';
+    </script>
+</body>
+</html>

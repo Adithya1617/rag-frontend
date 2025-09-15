@@ -5,10 +5,14 @@ import IngestForm from './components/IngestForm'
 import RetrievalInspector from './components/RetrievalInspector'
 
 export default function App(){
+    console.log('App component is rendering...')
+    
     const [retrieved, setRetrieved] = useState([])
     const [messages, setMessages] = useState([])
     const [currentResponseId, setCurrentResponseId] = useState(null)
     const [activeTab, setActiveTab] = useState('chat') // 'chat' or 'evaluation'
+
+    console.log('App state:', { activeTab, messagesCount: messages.length })
 
     return (
         <div className="app">
